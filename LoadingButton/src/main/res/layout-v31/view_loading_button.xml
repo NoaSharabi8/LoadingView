@@ -1,0 +1,28 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_gravity="center"
+    android:background="@drawable/fl_back_ground"
+    android:padding="6dp"
+    android:clipToOutline="true">
+
+    <ImageButton
+        android:id="@+id/profileImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_shape"
+        android:clipToOutline="true"
+        android:clickable="false"
+        android:focusable="false"/>
+
+    <ProgressBar
+        android:id="@+id/profileProgressBar"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/pb_spinner_custom"
+        android:visibility="gone" />
+</FrameLayout>
